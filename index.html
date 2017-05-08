@@ -11,7 +11,7 @@
         <!--Here is your header with the navigation nested inside -->
         <header class="site-header" role="banner">
             <div class="container">
-              <!--Insert Logo directive here -->
+                <logo-dir></logo-dir>
                 <nav class="site-nav">
                     <ul class="primary-nav">
                         <li ui-sref='home'>Home</li>
@@ -40,10 +40,12 @@
 
 <!--ADD ALL YOUR SCRIPTS HERE -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 <script src='./js/app.js'></script>
 <script src='./views/shop/shopCtrl.js'></script>
 <script src='./views/shop/shopService.js'></script>
+<script src='./views/product-details/productDetailsCtrl.js'></script>
+<script src='./views/directives/logo/logoDir.js'></script>
 
 </body>
 </html>

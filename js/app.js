@@ -20,7 +20,7 @@ angular.module('assessment', ['ui.router'])
         controller: 'shopCtrl'
     })
     .state('details', {
-        url: '/details/#id',
+        url: '/details/:id',
         templateUrl: '../views/product-details/product-details.html',
         controller: 'productDetailsCtrl'
     })
