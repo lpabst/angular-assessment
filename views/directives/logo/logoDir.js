@@ -1,9 +1,12 @@
-angular.module('assessment').directive('logoDir', function(){
+angular.module('assessment')
+.directive('logoDir', function(){
+
 
     return {
         restrict: 'E',
-        templateUrl: 'logo.html'
-    }
+        // template: 'Hola'
+        templateUrl: './views/directives/logo/logoDir.html'
+    };
 
 
 
