@@ -14,13 +14,7 @@ angular.module('assessment')
         controller: function($scope){
             $scope.showImage = true;
 
-            $scope.showImageFunc = function(){
-                $scope.showImage = true;
-            }
-
-            $scope.hideImageFunc = function(){
-                $scope.showImage = false;
-            }
+           
         }
     };
 

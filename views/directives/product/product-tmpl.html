@@ -1,9 +1,9 @@
         <!--Product Image-->
         <!--Product Image click collapse the image-->
         <a class="product-grid__product" >
-            <img class="product-grid__img" ng-src='{{ item.image }}' ng-show='showImage' ng-click='hideImageFunc()' sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+            <img class="product-grid__img" ng-src='{{ item.image }}' ng-show='showImage' ng-click='showImage = !showImage' sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
         </a>
-        <a class="product-grid__product" ng-hide='showImage' ng-click='showImageFunc()'>
+        <a class="product-grid__product" ng-hide='showImage' ng-click='showImage = !showImage'>
             show image
         </a>
 
