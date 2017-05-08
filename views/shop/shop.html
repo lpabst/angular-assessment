@@ -11,27 +11,8 @@
     <!--Repeat over your data and display it below -->
  
     <div ng-repeat='item in data' class='item'>
-
-        <a class="product-grid__product">
-            <img class="product-grid__img" ng-src='{{ item.image }}' sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
-        </a>
-        <a class="product-grid__product">
-            show image
-        </a>
-
-        <!--Product Meta-->
-        <div class="product-grid__meta">
-            <!--Title click Should redirect to the product-details section. remember 
-            to pass along the product id so you can make an api call
-            to get the specific product details-->
-            <h3 class="product-grid__name"><a ui-sref='details({id: item.id})'>{{ item.title }}</a></h3>
-            
-            <!--Product Description-->
-            <h4 class="product-grid__sub">{{ item.desc }}</h4>
-
-            <!--Product Price-->
-            <div class="product-grid__price">{{ item.price }}</div>
-        </div>
+        
+        <product-dir desc='item.desc' item='item'></product-dir>
         <br>
 
     </div>
